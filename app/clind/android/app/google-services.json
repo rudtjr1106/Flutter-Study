@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "859801104274",
+    "project_id": "clind-3e12c",
+    "storage_bucket": "clind-3e12c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:859801104274:android:22a791ffaa404460671b4b",
+        "android_client_info": {
+          "package_name": "com.example.clind"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACQ0RC0GD7ugyUeSz311aSopUpSgxM_ps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
