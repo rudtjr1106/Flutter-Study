@@ -24,5 +24,3 @@ dependencies:
     path: ../../tool/clind/network
   tool_clind_theme:
     path: ../../tool/clind/theme
-
-dev_dependencies:
