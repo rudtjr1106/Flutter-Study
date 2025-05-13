@@ -1,16 +1,2 @@
-# studyf
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+기존 패스트 캠퍼스 강의를 보며 클린 아키텍쳐를 무작정 따라하자니
+이해도 쉽게 되지 않고, 프로젝트 구조가 난잡해 보여 강의에 나오는 앱을 클론코딩하지만, 나만의 방식으로 수정하며 공부하는 쓰따디
