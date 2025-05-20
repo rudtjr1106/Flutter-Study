@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:studyf/design_system/colors.dart';
+import 'package:studyf/base/BaseScreenState.dart';
 
 import 'SplashProvider.dart';
 
@@ -11,7 +12,7 @@ class SplashScreen extends StatefulWidget {
   State<SplashScreen> createState() => _SplashScreenState();
 }
 
-class _SplashScreenState extends State<SplashScreen> {
+class _SplashScreenState extends BaseScreenState<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     SplashProvider provider = context.watch<SplashProvider>();
