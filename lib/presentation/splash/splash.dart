@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:device_preview/device_preview.dart';
+import 'package:provider/provider.dart';
 import 'package:studyf/design_system/colors.dart';
 
+import 'SplashProvider.dart';
+
 class SplashScreen extends StatefulWidget {
-  const SplashScreen({Key? key}) : super(key: key);
+  const SplashScreen({super.key});
 
   @override
   State<SplashScreen> createState() => _SplashScreenState();
@@ -12,6 +14,13 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
+    SplashProvider provider = context.watch<SplashProvider>();
+
+    print(provider.counter.toString());
+
+    Future.delayed(const Duration(seconds: 5), () {
+      provider.increment();
+    });
     return Scaffold(
       backgroundColor: splashBackground,
       body: SizedBox.expand(
@@ -20,19 +29,7 @@ class _SplashScreenState extends State<SplashScreen> {
           children: [
             Image.asset(
               'assets/ic/splash.png',
-              width: 46.0,
-              height: 46.0,
             ),
-
-            SizedBox(height: 30),
-
-            Text(
-              "쓰따디 스플래쉬",
-              style: TextStyle(
-                color: Colors.black,
-                fontStyle: FontStyle.italic
-              ),
-            )
           ],
         ),
       ),
