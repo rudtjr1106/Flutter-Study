@@ -1,4 +1,4 @@
-#1 Const   
+# 1. Const   
 - - -   
 flutter에서 rebuild될 때 특정 위젯에는 rebuild를 막도록 하고 싶으면 어떻게 해야할 지 궁금했다.   
 그래서 검색해본 결과 간단하게 위젯 앞에 const를 붙이면 된다고 한다.   
