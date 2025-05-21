@@ -12,16 +12,18 @@ class SplashScreen extends StatefulWidget {
   State<SplashScreen> createState() => _SplashScreenState();
 }
 
-class _SplashScreenState extends BaseScreenState<SplashScreen> {
+class _SplashScreenState extends BaseScreenState<SplashScreen, SplashProvider> {
   @override
-  Widget build(BuildContext context) {
-    SplashProvider provider = context.watch<SplashProvider>();
-
-    print(provider.counter.toString());
-
+  void initView(SplashProvider provider) {
+    super.initView(provider);
     Future.delayed(const Duration(seconds: 5), () {
       provider.increment();
     });
+
+  }
+  @override
+  Widget buildBody(BuildContext context, SplashProvider provider) {
+    print(provider.counter);
     return Scaffold(
       backgroundColor: splashBackground,
       body: SizedBox.expand(
